@@ -1,0 +1,35 @@
+.values.section {
+  padding-bottom: 0;
+}
+
+.values {
+  &__title {
+    @include font(700, 14px, 1.14, null, uppercase);
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include font(400, 14px, 1.7, 0.03em, null);
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 270px;
+  }
+
+  &__icon {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    @include flex(flex, center, center);
+  }
+
+  .list.values__list .values__item + .values__item {
+    margin-left: 30px;
+  }
+}
